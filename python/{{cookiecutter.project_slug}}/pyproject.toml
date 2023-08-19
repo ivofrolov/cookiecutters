@@ -1,0 +1,14 @@
+[project]
+name = "{{ cookiecutter.project_slug }}"
+version = "0.1"
+requires-python = ">={{ cookiecutter.python_version }}"
+dependencies = [
+  
+]
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["{{ cookiecutter.package_name }}"]
