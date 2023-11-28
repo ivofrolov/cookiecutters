@@ -5,11 +5,11 @@ package = {{ cookiecutter.package_name }}
 
 .PHONY: format
 format:
-	black $(src)/$(package)
+	ruff format $(src)/$(package)
 
 .PHONY: lint
 lint:
-	ruff check $(src)/$(package)
+	ruff check --output-format pylint $(src)/$(package)
 	pyright $(src)/$(package)
 
 .PHONY: ensure-pip-tools
