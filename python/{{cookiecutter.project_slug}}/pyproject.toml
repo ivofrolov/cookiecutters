@@ -13,6 +13,11 @@ build-backend = "setuptools.build_meta"
 [tool.setuptools]
 packages = ["{{ cookiecutter.package_name }}"]
 
+[tool.pyright]
+disableOrganizeImports = true
+useLibraryCodeForTypes = true
+include = ["{{ cookiecutter.package_name }}"]
+
 [tool.ruff]
 select = ["E", "F", "I"]
 fix = true
