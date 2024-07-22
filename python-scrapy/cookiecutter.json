@@ -1,5 +1,5 @@
 {
-    "project_name": "Cookiecutter Python Project",
+    "project_name": "Cookiecutter Python Scrapy Project",
     "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '-') }}",
     "python_version": "3.12",
     "package_name": "{{ cookiecutter.project_slug.lower().replace(' ', '_').replace('-', '_') }}"

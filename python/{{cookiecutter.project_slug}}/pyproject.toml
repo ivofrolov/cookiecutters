@@ -16,8 +16,9 @@ packages = ["{{ cookiecutter.package_name }}"]
 [tool.pyright]
 disableOrganizeImports = true
 useLibraryCodeForTypes = true
-include = ["{{ cookiecutter.package_name }}"]
 
 [tool.ruff]
-select = ["E", "F", "I"]
 fix = true
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]
