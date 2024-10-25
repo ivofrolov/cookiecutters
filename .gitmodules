@@ -1,0 +1,3 @@
+[submodule "tombot"]
+	path = tombot
+	url = git@github.com:ivofrolov/tombot.git

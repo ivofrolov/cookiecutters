@@ -1,16 +1,16 @@
 .DEFAULT_GOAL := lint
 
 src = .
-package = {{ cookiecutter.package_name }}
+package = $package_name
 
 .PHONY: format
 format:
-	ruff format $(src)/$(package)
+	ruff format $$(src)/$$(package)
 
 .PHONY: lint
 lint:
-	ruff check --output-format pylint $(src)/$(package)
-	pyright $(src)/$(package)
+	ruff check --output-format pylint $$(src)/$$(package)
+	pyright $$(src)/$$(package)
 
 .PHONY: ensure-pip-tools
 ensure-pip-tools:

@@ -1,0 +1,5 @@
+[variables]
+project_name = "Python Project"
+project_slug = "${project_name|to_kebab_case}"
+package_name = "${project_name|to_snake_case}"
+python_version = "3.12"
