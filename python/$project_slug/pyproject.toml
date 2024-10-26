@@ -11,7 +11,7 @@ requires = ["setuptools", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools]
-packages = ["{{ cookiecutter.package_name }}"]
+packages = ["$package_name"]
 
 [tool.pyright]
 disableOrganizeImports = true
