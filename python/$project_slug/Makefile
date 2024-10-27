@@ -18,7 +18,7 @@ ensure-pip-tools:
 
 .PHONY: requirements
 requirements: ensure-pip-tools
-	pip-compile --strip-extras --upgrade -o requirements.txt pyproject.toml
+	pip-compile -q --strip-extras --upgrade -o requirements.txt pyproject.toml
 
 .PHONY: install
 install: ensure-pip-tools
