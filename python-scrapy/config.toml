@@ -1,0 +1,7 @@
+[variables]
+project_name = "Python Scrapy Project"
+project_slug = "${project_name|to_kebab_case}"
+package_name = "${project_name|to_snake_case}"
+class_name = "${project_name|to_camel_case}"
+python_version = "3.12"
+scrapy_version = "2.11"

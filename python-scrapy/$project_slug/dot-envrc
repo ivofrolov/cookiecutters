@@ -1,0 +1,2 @@
+layout python python$python_version
+keep_only_last_version_of_python

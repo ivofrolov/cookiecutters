@@ -1,0 +1,24 @@
+[project]
+name = "$project_slug"
+version = "0.1"
+requires-python = ">=$python_version"
+dependencies = [
+  "scrapy~=$scrapy_version",
+]
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["$package_name"]
+
+[tool.pyright]
+disableOrganizeImports = true
+useLibraryCodeForTypes = true
+
+[tool.ruff]
+fix = true
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]
